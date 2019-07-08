@@ -1,0 +1,248 @@
+@import '../../../../styles';
+
+div{
+text-align: center;
+width:100%;
+height:100%;
+    h3{
+        font-size: 0.9em;
+        margin-top: 1em;
+        font-weight: 600;
+    }
+    img{
+        width:50%;
+        object-fit: contain;
+        margin-top: 0.5em;
+        margin-bottom:0.5em;
+    }
+    p{
+        width: 80%;
+        margin:auto;
+        text-align: left;
+        position: relative;
+        height:1.5em;
+        line-height: 1.5em;
+        span{
+           padding: 0 1em;
+            font-size:0.6em;
+        }
+        span:first-child{
+            position: absolute;
+            left:0;
+            text-decoration: line-through;
+            color: $colorRedText;
+        }
+        span:last-child{
+            position: absolute;
+            right:0;
+            background: $colorRedText;
+            color:white;
+            @include borderRadius(4px, 4px, 4px, 4px);
+        }
+    }
+        p:last-child{
+            margin-top:.5em;
+            font-size:0.6em;
+            width:90%;
+            height:7em;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
+}
+div.overflow{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    div.modalWindow{
+        width: 60%;
+        height:95%;
+        margin:auto;
+        background: white;
+         overflow: scroll;
+         p{
+             text-align: right;
+             margin-top: 0.5em;
+             img{
+                 width: 1.2em;
+                 object-fit: contain;
+                 border:2px solid $colorGreyText;
+                 @include borderRadius(50%, 50%, 50%, 50%);
+             }
+         }    
+       div.content{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+           justify-content: center;
+            flex-wrap: nowrap;
+            position: relative;
+            height: auto;
+            div.images{
+                width:40%;
+                position: relative;
+                top: 5em;
+                div.imgBig{
+                    border-bottom: 1px solid gray;
+                    padding-bottom: 0.5em;
+                    height: auto;
+                    }
+                    div.imgSmall{
+                       img{
+                           width: 4em;
+                           border: 1px solid gainsboro;
+                           margin-right: 1em;
+                           cursor: pointer;
+                         }
+                         img.selectedImg{
+                            outline: 1px solid red;
+                         }
+                        } 
+            }
+            div.description{ 
+                 width:55%;
+                display: block;
+                h3{
+                   text-align: left;
+                    // margin-bottom: 0.5em;
+                    font-size: 1.5em;
+                    color: $colorGreyText;
+                    font-weight: 400;
+                    position: relative;  
+                   }
+               
+               p{
+                    display: block;
+                    text-align: left;
+                    position: relative;
+                    color: $colorRedText;
+                    position: relative;
+                    margin-left:0px;
+                    span{
+                        position:relative;
+                        font-weight: 600;  
+                        vertical-align: top;
+                        padding: 0;
+                    }
+                    span:last-child{
+                        font-size:1.2em;
+                        font-weight: 600;
+                        background: white;
+                        color: $colorRedText;
+                        top:5px;
+                    }
+               } 
+               p:last-of-type{
+                    color: black;
+                    font-size: 0.7em;
+                    height: 11em;
+                    margin-top:2em;
+                
+                    }
+                div.colors, div.sizes{
+                    position:relative;
+                    top:24px;
+                    text-align: left;
+                    font-size: 0.9em;
+                    color: $colorGreyText;
+                    display: block;
+                    height:auto;
+                 
+                    div{
+                        text-align: left;
+                       // margin-top: 0.5em;
+                        span{
+                            width: 2em;
+                            height: 2em;
+                            margin: 5px;
+                            display: inline-block;
+                            border: 2px solid $colorGreyText;
+                            @include borderRadius(50%, 50%, 50%, 50%);
+                            cursor: pointer;
+                        }
+                  }
+                }  
+
+                div.sizes{
+                    div{
+                        span{
+                            @include borderRadius(0%, 0%, 0%, 0%);
+                            width: auto;
+                            padding:  0em 1em;
+                            @include boxSizing(content-box);
+                            height: 2em;
+                            text-align: center;
+                            line-height: 2em;
+                            border: 2px solid $colorRedText;
+                            color: $colorRedText;
+                            margin-top: 1em;
+                        }
+                    }
+                }
+               button{
+                   background: $colorRedText;
+                   color: white;
+                   margin-top: 1em;
+                   @include borderRadius(10px, 10px, 10px,10px);
+                   padding: 0.3em 2em;
+                
+                   border:none;
+                   @include boxShadow(0px,1px,3px,1px);
+                   margin-bottom: 2em;
+                   position:relative;
+                   left: 10em;
+                   top:2em;
+
+               }
+               button:hover{
+                @include boxShadow(0px,0px,0px,0px);
+               }
+            }
+       } 
+       div.review{
+           display: block;
+           position: relative;
+          p{
+            text-align: center; 
+            color:$colorGreyText;
+            margin-block-start:1em ;
+          }  
+            form{
+                display: block;
+                width:70%;
+                margin:auto;
+               text-align: center;
+               position: relative;
+              div.stars{
+                  text-align: left;
+                   img{
+                       width:15px;
+                       height:15px;
+                       object-fit: contain;
+                   }
+               }
+                button{
+                    background: $colorRedText;
+                    color: white;
+                    margin: 1em auto;
+                    position: relative;
+                    @include borderRadius(10px, 10px, 10px,10px);
+                    padding: 0.3em 2em;
+                    border:none;
+                    @include boxShadow(0px,1px,3px,1px);
+                   
+                }
+                button:hover{
+                   @include boxShadow(0px,0px,0px,0px);
+                   }
+                    button.isDisabled{
+                    @include boxShadow(0px,0px,0px,0px);
+                    background:rgba(252, 67, 110, 0.651);
+                }
+            }
+        }
+    }
+}

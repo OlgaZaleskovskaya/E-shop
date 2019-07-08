@@ -1,0 +1,118 @@
+@import '../../styles';
+
+$visiablePageNumbers: 5;
+$pageNavigationItemWidth: 3em;
+$pageNavigationWidth: ($visiablePageNumbers + 2 ) * $pageNavigationItemWidth;
+
+.main{
+   background: $colorBlackHeader;
+    width: $mainWidth;
+    height:500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    background: white;
+
+    aside{
+        width:20%;
+        @include boxSizing(border-box);
+        margin-top:20px;
+        color: $colorGreyText;
+        p{
+            text-align: center;
+            margin-bottom:10px;
+            padding-bottom:10px;
+        } 
+        p:after{
+            content: ".";
+            width:70%;
+            margin: auto; 
+             border-bottom: 1px solid   $colorGreyText;
+             display:block;
+        }
+        ul{
+            widows: 80%;
+            margin: auto;
+            li{
+                 padding-top: 7px;
+                 padding-bottom: 7px;
+                font-size: 0.8em;
+                text-align: center;
+                cursor: pointer;
+               
+            }
+            li.active{
+                color: $colorRedText;
+                text-decoration: underline;
+            }
+        }
+
+    }
+    article{
+        width:80%;
+        @include boxSizing(border-box);
+        div.pagination{
+            text-align: center;
+            margin-top:2em;
+            display: flex;
+            flex-direction: row;
+            position:relative;
+            width: $pageNavigationWidth;
+            background: blueviolet;
+        
+            div.pageNavigation{
+                position: absolute;
+                top:4px;
+                left:0;
+                width:$pageNavigationItemWidth;
+                vertical-align: bottom;
+                span{
+                    text-align: center;
+                     button.arrow{
+                    background: none;
+                    border: none;
+                     }
+                }
+            }
+            div.pageNavigation:last-child{
+                position: absolute;
+                left: $pageNavigationWidth - $pageNavigationItemWidth;
+                width: $pageNavigationItemWidth;
+            }
+            div.buttonGroup{
+                position: absolute;
+                top:0;
+                left: 4em;
+                button{
+                    cursor: pointer;
+                    border:1px grey solid;
+                    border-right: none;
+                    width: 3em;
+                    padding-top: 0.5em;
+                    font-style: italic;
+                    background: none;
+                    @include borderRadius(1px,4px,1px,4px);
+             }
+                 button:last-child{
+                    border-right:1px grey solid;
+                }
+                 button.currentPage {
+                    background:$colorRedText;
+                    color:white;
+                }
+            }
+        }
+    div.cards{
+
+        margin-top: 40px;
+        border-top:3px solid grey;
+        padding-top:20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    }
+}

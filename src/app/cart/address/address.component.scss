@@ -1,0 +1,87 @@
+@import '../../../styles';
+
+div.main{
+    width: $mainWidth;
+    h3{
+        color: $colorRedText;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+ 
+  
+    form{
+        width: 70%;
+        margin: auto;
+       
+        margin: auto;
+       div{
+            margin: 0.5em;
+            
+            input{
+                width: 100%;
+                line-height: 2em;
+                border: none;
+                border-bottom: 1px solid grey;
+                box-sizing: border-box;
+                padding-left: 2em;
+            }
+            .ng-invalid.ng-dirty.ng-touched:not(form)  {
+                border-left: 5px solid #a94442; /* red */
+                border-bottom-color: #a94442;
+              }
+              input + div, select + div {
+                font-size: 0.6em;
+                color:  grey;
+                font-style: italic;
+                width: 100%;
+                div{
+                    width: 100%;
+                }
+              }
+       }
+       div.city{
+           display: flex;
+           flex-direction: row;
+           flex-wrap: nowrap;
+           justify-content: space-between;
+           div{
+               margin-right:1%;
+               display: inline-block;
+               width: 31%;
+               p{
+                font-size: 0.7em;
+                margin-bottom: 0.5em;
+                width: 100%;
+               }
+               select{
+
+                width: 80%;
+                color: grey;
+               }
+               
+           }
+       }
+        button{
+            background: $colorRedText;
+            color: white;
+            margin: 1em auto;
+            position: relative;
+            @include borderRadius(2px, 2px, 2px,2px);
+            padding: 0.5em 2em;
+            border:none;
+             float: left;
+        }
+        button:disabled,
+        button[disabled]{
+            border: 1px solid #999999;
+            background-color: #cccccc;
+            color: #666666;
+        }
+       
+        button:last-of-type
+        {
+            float: right;
+        }  
+    }
+     
+}

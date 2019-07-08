@@ -1,0 +1,38 @@
+<div class="main">
+  <div class="buttons">
+    <button type="button" (click) = "emptyCart()">EMPTY CART</button>
+    <button type="button" (click)="placeOrder()">PLACE ORDER</button>
+  </div>
+  <h3>Total:{{cartService.changeSum | async | currency:'USD':'symbol-narrow'}}</h3>
+  <table>
+    <colgroup>
+      <col class="col1" />
+     
+      <col span="2" class="col2" />
+      <col span="3" class="coln" />
+    </colgroup>
+    <thead>
+    <tr>
+      <th>.</th>
+      <th>Name</th>
+      <th>Attributes</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Subtotal</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let item of cartService.goods; let i = index">
+      <td><img src="../../../assets/images/icons/icons-close-small-red.png"> remove</td>
+      <td>{{item.name}}</td>
+      <td>Color:&nbsp;{{item.color}}, Size:&nbsp;{{item.size | uppercase}}</td>
+      <td>{{item.price | currency: 'USD':'symbol-narrow'}}</td>
+      <td>
+         <span role = "button" (click) = "removeUnit(i)">-</span>{{item.amount}}
+         <span (click) = "addUnit(i)" role = "button"s>+</span> </td>
+      <td>{{item.price*item.amount | currency: 'USD':'symbol-narrow' }} </td>
+    </tr>
+
+  </table>
+
+
+</div>

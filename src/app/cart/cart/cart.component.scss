@@ -1,0 +1,98 @@
+@import '../../../styles';
+
+div.main{
+
+    width: $mainWidth;
+    h3{
+        color: $colorRedText;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+ 
+  
+    div.buttons{
+        overflow: hidden;
+        width:65%;
+        margin:auto;
+    
+        button{
+                background: $colorRedText;
+                color: white;
+                margin: 1em auto;
+                position: relative;
+                @include borderRadius(2px, 2px, 2px,2px);
+                padding: 0.5em 2em;
+                border:none;
+             float: left;
+        }
+        button:last-child
+        {
+            float: right;
+        }  
+    }
+     table{
+            width:65%;
+            margin:auto;
+          
+            table-layout: fixed;
+            .col1{
+                width: 14%;
+                border: 1px solid grey;
+            }
+            .col2{
+                width: 27%;
+                border: 1px solid grey;
+            } 
+            .coln{
+                width: 14%; 
+                border: 1px solid grey;
+            }
+            thead{
+                 height: 2em;
+                 tr{ 
+                     
+                    background: rgb(255, 226, 95);
+                     th{
+                        font-size: 0.6em;
+                        padding-top: 0.5em;
+                        padding-bottom: 0.5em;
+                     }
+                 }
+            }
+            tr{
+                border: 1px solid grey;
+                td{
+                width:20%;
+                padding:0.6em 1em;
+                border: 1px solid grey;
+                font-size: 0.6em;
+                vertical-align: middle;
+                position: relative;
+                text-align: center;
+                img{
+                    position: absolute;
+                    left: 0;
+                    top:1em;
+                }
+                span{
+                  
+                    display: inline-block;
+                    width: 1em;
+                    height: 1.5em;
+                    margin: 0.5em;
+                    background: $colorRedText;
+                    color: white;
+                    position: relative;
+                    @include borderRadius(2px, 2px, 2px,2px);
+                    border:none;
+                    @include boxShadow(0px,1px,1px,1px); 
+                    cursor: pointer; 
+                }
+                span:hover{
+                    @include boxShadow(0px,0px,0px,0px);  
+
+                }
+                }
+            }
+        }
+}

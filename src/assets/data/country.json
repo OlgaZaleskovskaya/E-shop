@@ -1,0 +1,58 @@
+[
+    {
+        "country": "USA",
+        "region": [
+            "Washington State",
+            "Delaware State",
+            "Alabama State",
+            "Alaska State",
+            "Arizona State",
+            "Montana State"
+        ]
+        
+    },
+    {
+        "country": "Poland",
+        "region": [
+            "Lower Silesian",
+            "Lublin",
+            "Silesian",
+            "Pomaranian",
+            "Opole"
+        ] 
+    },
+    {
+        "country": "Canada",
+        "region": [
+            "Aberta",
+            "Manitoba",
+            "Quebec",
+            "Ontario", 
+            "Yukon",
+            "British Columbia"
+    
+        ]
+    },
+    {
+        "country": "Finland",
+        "region": [
+            "Province of Vaasa",
+            "Province of Oulu",
+            "Province of Karelia",
+            "Province of Mikkeli",
+            "Province of Kuopio" 
+         
+        ]
+    },
+    {
+        "country": "Germany",
+        "region": [
+            "Bavaria",
+            "Saxony",
+            "Thuringia",
+            "Bremen",
+            "Hamburg" ,
+            "Hesse"
+        ]
+    }
+]

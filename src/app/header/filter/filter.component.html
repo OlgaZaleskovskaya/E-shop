@@ -1,0 +1,26 @@
+<div class="main">
+  <div class="logo ">
+    <p>SHOPMATE</p>
+  </div>
+  <div class="nav">
+    <ul>
+      <li *ngFor="let item of categories; let i = index;" >
+        <a [class.active] = "selectedFilter == item['categoryId']" role = "button" (click) = "selectFilter(i)"
+        >{{item['categoryName']}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="search">
+    <img src="../../assets/images/icons/icons-search-white.png" alt="">
+    <img src="../../assets/images/icons/icons-close-small-white.png" alt="">
+    <input type="text" placeholder="search anything">
+  </div>
+
+  <!-- <div>
+    <p class="yourBag"><img src="../assets/images/icons/icons-bag.png"><span>Your &nbsp; bag: &nbsp;&pound;3.99</span>
+    </p>
+    <div class="circle">6</div>
+  </div> -->
+
+</div>
+<app-goods [currentCategoryId] = "selectedFilter"></app-goods>

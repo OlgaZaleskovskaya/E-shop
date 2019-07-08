@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'reset';
+$fa-font-path: "node_modules/font-awesome/fonts";
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+$colorRedText: #F62F5E;
+$colorBlackHeader: #2E2E2E;
+$colorGreyJoombatron: #B0ADAB;
+$colorGreySearch:#969696;
+$colorGreyBackground:#F7F7F7;
+$colorGreyButton:#FFFFFF;
+$colorGreyText:#B4B4B4;
+$colorGreyCard: #FFFFFF;
+$colorGreyFilter: #FAFAFA;
+$chooseColorBlue: #6EB2FB; 
+$chooseColorLightGreen:#00D3CA;
+$chooseColorRed:#F62F5E;
+$chooseColorOrange:#FE5C07;
+$chooseColorYellow:#F8E71C;
+$chooseColorGreen:#7ED321;
+$chooseColorLightPurple:#9013FE;
+$mainWidth: 1333px;
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+    @mixin borderRadius($topLeft, $topRight, $bottomLeft, $BottomRight) {      
+        -webkit-border-radius: $topLeft $topRight $bottomLeft $BottomRight;   
+           -moz-border-radius: $topLeft $topRight $bottomLeft $BottomRight;  
+            -ms-border-radius: $topLeft $topRight $bottomLeft $BottomRight;  
+             -o-border-radius: $topLeft $topRight $bottomLeft $BottomRight;
+                border-radius: $topLeft $topRight $bottomLeft $BottomRight;   
+      }
+
+      @mixin boxSizing($boxSizing) {      
+      -moz-box-sizing: $boxSizing;
+      box-sizing:  $boxSizing;
+      }
+
+      @mixin placeholder($color,$fontSize, $fontWeight, $fontStyle) {
+        &::-webkit-input-placeholder { /* WebKit browsers */
+            color: $color;
+            font-size: $fontSize;
+            font-weight:$fontWeight;
+            font-style: $fontStyle;
+        }
+        &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: $color;
+            font-size: $fontSize;
+            font-weight:$fontWeight;
+            font-style: $fontStyle;
+        }
+        &::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color: $color;
+            font-size: $fontSize;
+            font-weight:$fontWeight;
+            font-style: $fontStyle;
+        }
+        &:-ms-input-placeholder { /* Internet Explorer 10+ */
+            color: $color;
+            font-size: $fontSize;
+            font-weight:$fontWeight;
+            font-style: $fontStyle;
+        }
+      }
+
+      @mixin boxShadow($hLength, $vLength, $blurR, $spreadR) {
+        -webkit-box-shadow: $hLength $vLength $blurR $spreadR rgba(0,0,0,0.75);
+        -moz-box-shadow: $hLength $vLength $blurR $spreadR rgba(0,0,0,0.75);
+        box-shadow: $hLength $vLength $blurR $spreadR rgba(0,0,0,0.75);
+      }

@@ -1,0 +1,498 @@
+[
+    {
+        "goodName": "T-shirt1",
+        "goodId": "T-shirt1",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-1",
+        "price": 15,
+        "stars": 3,
+        "discountedPrice": 20
+    },
+    {
+        "goodName": "T-shirt2",
+        "goodId": "T-shirt2",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-1",
+        "price": 15,
+        "stars": 3,
+        "discountedPrice": 20
+    },
+    {
+        "goodName": "T-shirt3",
+        "goodId": "T-shirt3",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-1",
+        "price": 15,
+        "stars": 3,
+        "discountedPrice": 30
+    },
+    {
+        "goodName": "T-shirt5",
+        "goodId": "T-shirt5",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-1",
+        "price": 15,
+        "stars": 4,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt4",
+        "goodId": "T-shirt4",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-1",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt6",
+        "goodId": "T-shirt6",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-6",
+        "price": 15,
+        "stars": 4,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt7",
+        "goodId": "T-shirt7",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-7",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt8",
+        "goodId": "T-shirt8",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-8",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt9",
+        "goodId": "T-shirt9",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-9",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt1033",
+        "goodId": "T-shirt1033",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-1033",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt1233",
+        "goodId": "T-shirt1233",
+        "subParentId": "seaCat",
+        "parentId": "vl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-1233",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt2233",
+        "goodId": "T-shirt2233",
+        "subParentId": "seaCat",
+        "parentId": "vl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-1233",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt3233",
+        "goodId": "T-shirt3233",
+        "subParentId": "seaCat",
+        "parentId": "vl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-1233",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt5233",
+        "goodId": "T-shirt5233",
+        "subParentId": "seaCat",
+        "parentId": "vl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-1233",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt4233",
+        "goodId": "T-shirt4233",
+        "subParentId": "seaCat",
+        "parentId": "vl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-1233",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt6233",
+        "goodId": "T-shirt6233",
+        "subParentId": "seaCat",
+        "parentId": "vl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-6233",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt7233",
+        "goodId": "T-shirt7233",
+        "subParentId": "seaCat",
+        "parentId": "vl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-7233",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt8233",
+        "goodId": "T-shirt8233",
+        "subParentId": "seaCat",
+        "parentId": "vl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-8233",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt9233",
+        "goodId": "T-shirt9233",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-9233",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt10233",
+        "goodId": "T-shirt10233",
+        "subParentId": "seaCat",
+        "parentId": "vl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-10233",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt1-56",
+        "goodId": "T-shirt1-56",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-1-56",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt2-56",
+        "goodId": "T-shirt2-56",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-1-56",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt3-56",
+        "goodId": "T-shirt3-56",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+            "description": "description-1-56",
+        "price": 15,
+        "stars": 2,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt5-56",
+        "goodId": "T-shirt5-56",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-1-56",
+        "price": 15,
+        "stars": 2,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt4-56",
+        "goodId": "T-shirt4-56",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": [
+            "../../../assets/images/shirts/images-shirt17.png",
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-1-56",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt6-56",
+        "goodId": "T-shirt6-56",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": [
+            "../../../assets/images/shirts/images-shirt17.png",
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-6-56",
+        "price": 15,
+        "stars": 4,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt7-56",
+        "goodId": "T-shirt7-56",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": [
+            "../../../assets/images/shirts/images-shirt17.png",
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-7-56",
+        "price": 15,
+        "stars": 3,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt8-56",
+        "goodId": "T-shirt8-56",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+           
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-8-56",
+        "price": 15,
+        "stars": 2,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt9-56",
+        "goodId": "T-shirt9-56",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+           
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-9-56",
+        "price": 15,
+        "stars": 3,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt10-56",
+        "goodId": "T-shirt10-56",
+        "subParentId": "regCat",
+        "parentId": "itl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+         
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-10",
+        "price": 15,
+        "stars": 3,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt1-562",
+        "goodId": "T-shirt12-56",
+        "subParentId": "natCat",
+        "parentId": "anm",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+          
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-12-56",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt22-56",
+        "goodId": "T-shirt22-56",
+        "subParentId": "natCat",
+        "parentId": "anm",
+        "picturesURL": [
+            "../../../assets/images/shirts/images-shirt17.png",
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-12-56",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt3-562",
+        "goodId": "T-shirt32-56",
+        "subParentId": "seaCat",
+        "parentId": "vl",
+        "picturesURL": [
+            "../../../assets/images/shirts/images-shirt17.png",
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-12-56",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt52-56",
+        "goodId": "T-shirt52-56",
+        "subParentId": "natCat",
+        "parentId": "anm",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+         
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-12-56",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt42-56",
+        "goodId": "T-shirt4-562",
+        "subParentId": "natCat",
+        "parentId": "fl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+            "../../../assets/images/shirts/images-shirt17.png"],
+        "description": "description-12-56",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt62-56",
+        "goodId": "T-shirt62-56",
+        "subParentId": "seaCat",
+        "parentId": "vl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+          
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-62-56",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt72-56",
+        "goodId": "T-shirt72-56",
+        "subParentId": "seaCat",
+        "parentId": "vl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+         
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-72-56",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt82-56",
+        "goodId": "T-shirt82-56",
+        "subParentId": "natCat",
+        "parentId": "fl",
+        "picturesURL": [
+            "../../../assets/images/shirts/images-shirt17.png",
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-82-56",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt92-56",
+        "goodId": "T-shirt92-56",
+        "subParentId": "natCat",
+        "parentId": "fl",
+        "picturesURL": [
+            "../../../assets/images/shirts/images-shirt17.png",
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-92-56",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    },
+    {
+        "goodName": "T-shirt102-56",
+        "goodId": "T-shirt102-56",
+        "subParentId": "natCat",
+        "parentId": "fl",
+        "picturesURL": ["../../../assets/images/shirts/images-shirt16.png",
+         
+            "../../../assets/images/shirts/images-shirt15.png"],
+        "description": "description-102-56",
+        "price": 15,
+        "stars": 1,
+        "discountedPrice": 10
+    }
+   
+]

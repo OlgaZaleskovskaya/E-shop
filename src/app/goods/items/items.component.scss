@@ -1,0 +1,25 @@
+@import '../../../styles';
+div.main{
+    width: 900px;
+div.wrapper{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: green;
+    width:100%;
+    section{
+    width:30%;
+    height:18em;
+    border:1px solid grey;
+    margin-top: 2em;
+    background: yellow;
+    }
+    section:hover{
+        @include boxShadow(-2px, 9px,4px,-7px);
+    }
+}
+
+}
+
+

@@ -1,0 +1,40 @@
+<div class="main">
+  <aside>
+    <p>Categories {{selectedFilter}}</p>
+    <ul>
+      <li  *ngFor="let item of subCategories" [class.active] = " item['subCategoryId'] == currentSubCategoryId"(click) ="currentSubCategoryId = item['subCategoryId'] ">
+        {{item['subCategoryName']}}
+      </li>
+    </ul>
+  </aside>
+  <article>
+    <div class = "pagination">
+      <div *ngIf="lastPageNumber > visiblePageNumbers" class="pageNavigation">
+         <span><button type=" button" class="arrow" (click)="onNextPage(false)">
+          < </button>...</span>
+        </div>
+      <div class="buttonGroup">
+        <button type=" button" [class.currentPage]="currentPage == i" (click)="currentPage = i"
+          *ngFor="let i of pagesArray| pagesLimit: lastPageNumber: visiblePageNumbers">{{i }}</button>
+      </div>
+    
+      <div class="pageNavigation" *ngIf="lastPageNumber < pagesArray.length">
+      
+        <span>...
+        <button class="arrow" type="button" (click)="onNextPage(true)">></button></span>
+      </div>
+    </div>                                      
+    <div  class="cards">
+
+      <app-items 
+       [currentSubCategoryId] = "currentSubCategoryId" 
+       [currentCategoryId] = "currentCategoryId" 
+       [currentPage]="currentPage"
+       [itemsPerPage]="itemsPerPage"
+       
+       >
+
+      </app-items>
+    </div>
+  </article>
+</div>s

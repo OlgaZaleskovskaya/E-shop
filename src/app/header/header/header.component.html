@@ -1,0 +1,40 @@
+<div>
+  <header>
+    <div class="logo" *ngIf="!authService.isAuthorized else isAuthorized"> <span class="blackText">Hi!</span> <a
+        class="redText" (click)="onSignIn()">Sign in</a> or<a class="redText" (click)="onSignUp()">Register</a>
+    </div>
+    <div class="nav">
+      <a class=" blackText" href="#">Daily Deals</a>
+      <a class=" blackText" href="#">Sell</a>
+      <a class=" blackText" href="#">Help & Contact</a>
+    </div>
+    <div>
+      <p><img src="../assets/images/icons/gbr.png"><span>&pound;
+          &nbsp;GBP</span></p>
+    </div>
+    <div>
+      <p class="yourBag">
+        <a class="cartDetails" (click)="goToCart()"><img src="../assets/images/icons/icons-bag.png"><span> &nbsp;Your
+            bag:
+            &nbsp;&pound;{{cartService.changeSum | async}}</span>
+        </a>
+      </p>
+      <div class="circle">{{cartService.changeAmount | async}}</div>
+    </div>
+  </header>
+
+  <!-- <app-filter *ngIf="!isCartOpen"></app-filter>  -->
+  <router-outlet></router-outlet>
+</div>
+
+<ng-template #isAuthorized>
+  <div class="dropDownMenu">
+    <p (click)="isOpen = !isOpen">Hi, {{authService.name}} &nbsp;&#9660;</p>
+    <nav [@openClose]="isOpen ? 'open' : 'closed'">
+     <a appHighlight><i class="fa fa-shopping-bag"></i> &nbsp;My Bag</a>
+      <a appHighlight><i class="fa fa-user"></i> &nbsp;My Profile</a>
+      <a appHighlight><i class="fa fa-user"></i> &nbsp;Log out</a>
+    
+    </nav>
+  </div>
+</ng-template>

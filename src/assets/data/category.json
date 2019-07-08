@@ -1,0 +1,14 @@
+[
+    {
+        "categoryName": "Regional",
+        "categoryId": "regCat"
+    },
+    {
+        "categoryName": "Natural",
+        "categoryId": "natCat"
+    },
+    {
+        "categoryName": "Seasonal",
+        "categoryId": "seaCat"
+    }
+]

@@ -1,0 +1,75 @@
+<div class="card" *ngIf="!isShowModal" (click)="showModal()">
+    <h3> {{good.goodName}}</h3>
+    <img src="{{imagePathes[0]}} " alt="">
+    <p><span>{{good.price | currency: 'USD':'symbol'}}</span><span>{{good.discountedPrice|currency: 'USD':'symbol'}}</span>
+    </p>
+    <p>{{good.description}}</p>
+</div>
+
+<div *ngIf="isShowModal" class="overflow">
+    <div class="modalWindow">
+        <p><img src="../../../../assets/images/icons/icons-close-small-black.png" alt=""></p>
+
+        <div class="content">
+            <div class="images">
+                <div class="imgBig"><img src="{{imagePathes[currentPicture]}} " alt="">
+                </div>
+                <div class="imgSmall">
+                    <img role="button" (click)="currentPicture = i" [class.selectedImg]="currentPicture == i"
+                        *ngFor="let path of imagePathes; let i = index;" src="{{path}}" alt="">
+                </div>
+            </div>
+            <div class="description">
+                <h3> {{good.goodName}}</h3>
+                <p> <span> {{good.price | currency: 'USD':'symbol'}}</span>
+                    <span>{{good.discountedPrice|currency: 'USD':'symbol'}}</span>
+                </p>
+                <p>{{good.description}}</p>
+                <div class="colors">
+                    Color
+                    <div>
+                        <span (click)=" selectColor(i)" [style.borderColor]="i == selectedColor? 'red':'grey'"
+                            *ngFor="let color of colors; let i = index" [ngStyle]="{'backgroundColor':color}"></span>
+                    </div>
+                </div>
+                <div class="sizes">
+                    Size
+                    <div> <span *ngFor="let size of sizes; let i = index" (click)=" selectSize(i)"
+                            [style.backgroundColor]="i == selectedSize? 'red':'white'"
+                            [style.color]="i == selectedSize? 'white':'red'">{{size | uppercase}}</span>
+                    </div>
+                </div>
+                <button type="button" (click) = "addToCart()">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="review ">
+            <p>Leave a Review</p>
+            <form action="" (ngSubmit)="onSubmitReview(reviewForm)" #reviewForm="ngForm">
+                <textarea id="review" name="review" required rows="5" cols="80s" minlength="3" [(ngModel)]="review"
+                    #review1="ngModel"></textarea>
+
+                <!-- <div *ngIf="review1.invalid && (review1.dirty || review1.touched)" class="alert ">
+                    <div *ngIf="review1.errors.required">
+                        Review is required.
+                    </div>
+                    <div *ngIf="review1.errors.minlength">
+                        Length is required.
+                    </div>
+                </div> -->
+                <div class="stars">
+                    <img *ngFor="let url of starsArray" src="{{url}}" alt="">
+                </div>
+                <button type="submit" [disabled]="review1.invalid" [class.isDisabled]="review1.invalid">Send
+                    review</button>
+
+            </form>
+
+
+
+
+
+        </div>
+    </div>
+
+</div>

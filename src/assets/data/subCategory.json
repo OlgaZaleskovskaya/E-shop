@@ -1,0 +1,44 @@
+[
+    {
+        "subCategoryName": "French",
+        "subCategoryId": "fr",
+        "parentId": "regCat",
+        "amount": 12
+    },
+    {
+        "subCategoryName": "Irish",
+        "subCategoryId": "irs",
+        "parentId": "regCat",
+        "amount": 3
+    },
+    {
+        "subCategoryName": "Italian",
+        "subCategoryId": "itl",
+        "parentId": "regCat",
+        "amount": 4
+    },
+    {
+        "subCategoryName": "Animal",
+        "subCategoryId": "anm",
+        "parentId": "natCat",
+        "amount": 25
+    },
+    {
+        "subCategoryName": "Flower",
+        "subCategoryId": "fl",
+        "parentId": "natCat",
+        "amount": 16
+    },
+    {
+        "subCategoryName": "Cristmas",
+        "subCategoryId": "cr",
+        "parentId": "seaCat",
+        "amount": 67
+    },
+    {
+        "subCategoryName": "Valentine's",
+        "subCategoryId": "vl",
+        "parentId": "seaCat",
+        "amount": 45
+    }
+]

@@ -1,0 +1,101 @@
+@import '../../../styles';
+header{
+    display: flex;
+    flex-direction: row;
+    width: $mainWidth;
+    justify-content: flex-start;
+    align-items: center;
+    height: 4.1em;
+    margin: 0 2.5em;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    div{
+        font-weight: 500;
+        font-size: 1.1em;
+        width: 188px; 
+        padding-top:.2em;
+     
+        p.yourBag{
+            position: relative;
+            a {
+
+           cursor: pointer;
+              img{
+                  width: 30px;
+                  position: absolute;
+                  top:-5px;
+              }
+              span{
+                position: relative;
+                right:-40px;
+              
+              }
+            } 
+      }
+    }
+    div.logo{
+        width: 318px; 
+          color: $colorBlackHeader;
+        a{   
+            text-decoration: none;
+                color: $colorRedText;  
+        }
+    }
+   div.nav{
+     width:530px;
+     margin:0 3px;
+     text-align: center;
+        a{
+            margin-right: 1.6em;
+            text-decoration: none;
+            color: $colorBlackHeader;
+         
+        }
+        a:last-child{
+          margin-left: -6px;
+
+        }
+    }
+    div:last-child{
+      width:auto; 
+      position: relative;
+     
+       div.circle{
+        background: $colorRedText;
+        @include borderRadius(50%, 50%, 50%,50%);
+        position: absolute;
+        width:32px;
+        height: 32px;
+        color: white;
+        font-weight: 500;
+        font-size:15px;
+        top:10px;
+        left:17px;
+       line-height: 32px;
+        text-align: center;
+        padding:0;
+    }
+    }
+  
+}
+div.dropDownMenu{
+cursor: pointer;
+nav{
+  
+  border: 0px solid grey;
+  position:  absolute;
+  top: 3em;
+  overflow: hidden;
+  
+  @include boxShadow(1px, 1px, 5px,2px);
+  a{
+    white-space: nowrap;
+    display:block;
+   font-size:0.7em;
+    color: grey;
+    padding: 0.5em;
+    border-bottom: 1px sold white;
+    padding: 0.5em;
+  }
+}
+}
